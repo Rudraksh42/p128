@@ -42,13 +42,13 @@ function play(){
 function gotPoses(results){
     if (results.length > 0){
         console.log(results);
-        leftX = results[0].pose.leftWrist.x;
-        leftY = results[0].pose.leftWrist.y;
-        console.log("left wrist X = " + leftX + " left wrist Y = " + leftY);
+        leftWristX = results[0].pose.leftWrist.x;
+        leftWristY = results[0].pose.leftWrist.y;
+        console.log("left wrist X = " + leftWristX + " left wrist Y = " + leftWristY);
 
-        rightX = results[0].pose.rightWrist.x;
-        rightY = results[0].pose.rightWrist.y;
-        console.log("right wrist X = " + rightX + " right wrist Y = " + rightY);
+        rightWristX = results[0].pose.rightWrist.x;
+        rightWristY = results[0].pose.rightWrist.y;
+        console.log("right wrist X = " + rightWristX + " right wrist Y = " + rightWristY);
 
     }
 }
