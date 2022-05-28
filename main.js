@@ -2,7 +2,7 @@ song = "";
 song1 = "";
 song2 = "";
 
-leftWrisY = "";
+leftWristY = "";
 leftWristX = "";
 
 rightWristY = "";
@@ -40,7 +40,7 @@ function play(){
     
 }
 function gotPoses(results){
-    if (results.length > 0){
+    if ( results[0].length > 0){
         console.log(results);
         leftWristX = results[0].pose.leftWrist.x;
         leftWristY = results[0].pose.leftWrist.y;
